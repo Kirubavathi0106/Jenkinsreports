@@ -23,7 +23,7 @@ public class ExtentListener implements ITestListener
 	
 	public  void onStart(ITestContext context)
 	{
-		sparkReporter= new ExtentSparkReporter("src/test/resources/reports/myReport.html");
+		sparkReporter= new ExtentSparkReporter("src/test/resources/Reports/myReport.html");
 		sparkReporter.config().setDocumentTitle("Selenium Project");
 		sparkReporter.config().setReportName("Regression Testing");
 		sparkReporter.config().setTheme(Theme.STANDARD);
