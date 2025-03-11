@@ -23,10 +23,10 @@ public class ExtentListener implements ITestListener
 	
 	public  void onStart(ITestContext context)
 	{
-		 String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()); // Dynamic timestamp
-        String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport_" + timestamp + ".html";
-        sparkReporter = new ExtentSparkReporter(reportPath);
-		//sparkReporter= new ExtentSparkReporter(System.getProperty("user.dir")+ "/reports/myReport.html");
+	// 	 String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()); // Dynamic timestamp
+    //     String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport_" + timestamp + ".html";
+        //sparkReporter = new ExtentSparkReporter(reportPath);
+		sparkReporter= new ExtentSparkReporter(System.getProperty("user.dir")+ "/reports/myReport.html");
 		sparkReporter.config().setDocumentTitle("Selenium Project");
 		sparkReporter.config().setReportName("Regression Testing");
 		sparkReporter.config().setTheme(Theme.STANDARD);
