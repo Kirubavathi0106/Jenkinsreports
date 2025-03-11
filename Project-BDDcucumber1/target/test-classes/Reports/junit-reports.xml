@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="14.434" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Rediff Account Creation" name="Create a new Rediff account from the Sign-In page" time="14.275">
+<system-out><![CDATA[
+Given I navigate to website page............................................passed
+When I clicked sign in link.................................................passed
+When I clicked create account link..........................................passed
+And I entered the details...................................................passed
+Then I clicked the create account button....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
